@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Site</title>
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+article {
+    flex: 3;
+    min-width: 600px;
+    margin-right: 20px;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article .date {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+aside {
+    flex: 1;
+    min-width: 250px;
+}
+
+aside .events, 
+aside .quote {
+    margin-bottom: 20px;
+}
+
+aside h3 {
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+}
+
+aside blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        margin-right: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Логотип</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Tests</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <h2>What is Lorem Ipsum?</h2>
+                <p class="date">30/03/2019 11:20</p>
+                <img src="html_vs_html5.png" alt="HTML vs HTML5">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+            </article>
+            <aside>
+                <div class="events">
+                    <h3>Events</h3>
+                    <ul>
+                        <li>Donec ut nisi ullamcorper, ultrices neque ac, maximus justo</li>
+                        <li>Vivamus fringilla ligula eu nunc tincidunt, in dignissim augue rutrum</li>
+                        <li>Quisque vel quam fermentum velit luctus pulvinar eget et leo</li>
+                        <li>Curabitur eleifend quam pulvinar nibh suscipit mollis</li>
+                        <li>Duis et metus finibus, feugiat augue non, eleifend nisl</li>
+                        <li>Duis tempor magna in interdum viverra</li>
+                    </ul>
+                </div>
+                <div class="quote">
+                    <blockquote>
+                        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                    </blockquote>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

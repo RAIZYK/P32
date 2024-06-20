@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої дошки</title>
+  <style>
+    /* Стилі для сторінки */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Стилі для заголовка */
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    /* Стилі для контейнера дощок */
+    .boards-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 20px;
+      flex: 1 1 auto;
+    }
+
+    /* Стилі для дошки */
+    .board {
+      width: 300px;
+      min-width: 300px;
+      max-width: 400px;
+      margin-right: 20px;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Стилі для заголовка дошки */
+    .board-header {
+      background-color: #666;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      flex: 0 0 auto;
+    }
+
+    /* Стилі для списку завдань */
+    .task-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow-y: auto;
+      flex: 1 1 auto;
+    }
+
+    /* Стилі для завдання */
+    .task {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Стилі для виконаного завдання */
+    .task.completed {
+      text-decoration: line-through;
+    }
+
+    /* Стилі для іконки виконання завдання */
+    .task-checkbox {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    /* Стилі для скролу */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: auto;
+      background-color: #ccc;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #999;
+      border-radius: 5px;
+    }
+
+    /* Адаптивні стилі для планшетів і телефонів */
+    @media (max-width: 768px) {
+      .boards-container {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .board {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        min-width: 100%;
+      }
+
+      body {
+        height: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        padding: 10px;
+      }
+
+      .board {
+        padding: 10px;
+      }
+
+      .board-header {
+        padding: 8px;
+      }
+
+      .task {
+        padding: 8px;
+      }
+
+      .task-checkbox {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Мої дошки</h1>
+  </div>
+
+  <div class="boards-container">
+    <div class="board">
+      <div class="board-header">To Do</div>
+      <ul class="task-list">
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Quisque ut mi eget nisl lacinia cursus.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Sed dapibus tellus id dolor gravida, fringilla finibus ligula condimentum.
+        </li>
+      </ul>
+    </div>
+
+    <div class="board">
+      <div class="board-header">In Progress</div>
+      <ul class="task-list">
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          In sed eros sed magna cursus molestie.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Aenean ac quam ac diam suscipit interdum.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Vivamus vel leo et risus facilisis vehicula.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Curabitur nec ligula et magna viverra suscipit.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Donec venenatis ligula sit amet libero consequat, et dignissim odio dapibus.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Proin at velit non urna efficitur tincidunt.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Morbi suscipit dolor vitae lectus tristique, ut faucibus orci bibendum.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Nulla facilisi. Fusce bibendum lectus vel purus interdum, id aliquet ligula pretium.
+        </li>
+      </ul>
+    </div>
+
+    <div class="board">
+      <div class="board-header">Done</div>
+      <ul class="task-list">
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Cras aliquet nisi at purus auctor vehicula.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Nullam condimentum est non purus dictum, nec convallis tortor tristique.
+        </li>
+        <li class="task">
+          <img src="C:\Users\sasha\Downloads\chel2.png" alt="Checkbox" class="task-checkbox">
+          Suspendisse potenti. Morbi a justo sit amet purus tincidunt pretium.
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

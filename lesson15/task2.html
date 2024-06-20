@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .chat {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        .chat-header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-header img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .chat-header span {
+            font-weight: bold;
+        }
+
+        .chat-body {
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        .chat-message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .chat-message.user1 {
+            background-color: #e0e0e0;
+            text-align: left;
+        }
+
+        .chat-message.user2 {
+            background-color: #fff;
+            text-align: right;
+        }
+
+        .chat-message span.username {
+            font-weight: bold;
+        }
+
+        .chat-message span.timestamp {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        .chat-footer {
+            padding: 10px;
+        }
+
+        .chat-footer input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .chat-footer button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="chat">
+    <div class="chat-header">
+        <span>Користувач 1</span>
+    </div>
+
+    <div class="chat-body">
+        <div class="chat-message user1">
+            <span class="username">Користувач 1:</span>
+            <span class="message">Привіт!</span>
+            <span class="timestamp">14:00</span>
+        </div>
+
+        <div class="chat-message user2">
+            <span class="username">Користувач 2:</span>
+            <span class="message">Привіт! Як справи?</span>
+            <span class="timestamp">14:01</span>
+        </div>
+
+        <div class="chat-message user1">
+            <span class="username">Користувач 1:</span>
+            <span class="message">У мене все добре, дякую. А у вас?</span>
+            <span class="timestamp">14:02</span>
+        </div>
+
+        <div class="chat-message user2">
+            <span class="username">Користувач 2:</span>
+            <span class="message">У мене теж все добре. Дякую, що запитали.</span>
+            <span class="timestamp">14:03</span>
+        </div>
+    </div>
+
+    <div class="chat-footer">
+        <input type="text" placeholder="Введіть повідомлення">
+        <button>Відправити</button>
+    </div>
+</div>
+</body>
+</html>
