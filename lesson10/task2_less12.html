@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Columns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+        .column {
+            box-sizing: border-box;
+            flex: 1 1 33%;
+            padding: 10px;
+        }
+        .column img {
+            width: 100%;
+            height: auto;
+        }
+        .column div {
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .column {
+                flex: 1 1 50%;
+            }
+        }
+        @media (max-width: 480px) {
+            .column {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <img src="https://via.placeholder.com/350x150" alt="Placeholder">
+            <div>
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis purus sed ipsum rhoncus, aliquet feugiat elit euismod.</p>
+            </div>
+            <img src="https://via.placeholder.com/350x220" alt="Placeholder">
+            <div>
+                <p>Aenean feugiat dui et libero consectetur hendrerit.</p>
+            </div>
+            <img src="https://via.placeholder.com/350x100" alt="Placeholder">
+            <div>
+                <h2>Title</h2>
+                <p>Mauris nec purus nec ligula euismod convallis. Vivamus ac tortor vel quam viverra tristique.</p>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://via.placeholder.com/350x100" alt="Placeholder">
+            <div>
+                <p>Aliquam ornare nulla a velit vehicula, sed dignissim nunc pharetra. Fusce in dolor eu metus cursus imperdiet.</p>
+            </div>
+            <img src="https://via.placeholder.com/350x230" alt="Placeholder">
+            <div>
+                <h2>The title</h2>
+                <p>In ultrices lorem id consectetur tempus. Mauris tristique enim in hendrerit dapibus.</p>
+            </div>
+            <img src="https://via.placeholder.com/350x150" alt="Placeholder">
+            <div>
+                <p>Nulla at justo iaculis, faucibus tortor non, blandit tortor. Quisque id lectus et ipsum bibendum mattis vitae sagittis magna.</p>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://via.placeholder.com/350x100" alt="Placeholder">
+            <div>
+                <h2>A little longer title</h2>
+                <p>Aenean accumsan turpis gravida feugiat molestie. Aliquam ornare nulla a velit vehicula, sed dignissim nunc pharetra.</p>
+            </div>
+            <img src="https://via.placeholder.com/350x350" alt="Placeholder">
+            <div>
+                <h2>A title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis purus sed ipsum rhoncus, aliquet feugiat elit euismod.</p>
+            </div>
+            <img src="https://via.placeholder.com/350x150" alt="Placeholder">
+            <div>
+                <p>Vivamus ac tortor vel quam viverra tristique. Curabitur suscipit est non mattis volutpat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

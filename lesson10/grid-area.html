@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	
+	.container{
+		display: grid;
+		grid-template-areas: 
+		'header header header'
+		'section1 section2 section2'
+		'section1 footer footer'
+		grid-gap: 10px;
+		padding: 20px;
+	}
+
+	.header{
+		grid-area: header;
+	}
+
+	.section1{
+		grid-area: section1;
+	}
+
+	.section2{
+
+	}
+
+</style>
+
+</head>
+<body>
+
+<div class="container"></div>
+	<div class="item header">header</div>
+	<div class="item section1">section1</div>
+	<div class="item section2">section2</div>
+	<div class="item footer">footer</div>
+
+</body>
+</html>
