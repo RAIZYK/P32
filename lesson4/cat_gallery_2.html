@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея зображень</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Галерея зображень</h1>
+        <div class="large-image-container">
+            <iframe id="large-image" src="images/image1.jpg" frameborder="0"></iframe>
+        </div>
+        <div class="thumbnail-container">
+            <frame><a href="images/image1.jpg" class="thumbnail" onclick="changeImage(event, 'images/image1.jpg')">
+                <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_tied_256.png" alt="Зображення 1">
+            </a></frame>
+            <frame><a href="images/image2.jpg" class="thumbnail" onclick="changeImage(event, 'images/image2.jpg')">
+                <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_eyes_256.png" alt="Зображення 2">
+            </a></frame>
+            <frame><a href="images/image3.jpg" class="thumbnail" onclick="changeImage(event, 'images/image3.jpg')">
+                <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_purr_256.png" alt="Зображення 3">
+            </a></frame>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

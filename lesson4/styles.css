@@ -1,0 +1,30 @@
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fffdd0;
+  }
+
+  h1 {
+      margin-bottom: 20px;
+  }
+
+  .icons {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+  }
+
+  .icon {
+      opacity: 0;
+      transform: translateY(100%);
+      transition: transform 2s, opacity 2s;
+  }
+
+  .icon img {
+      width: 50px;
+      height: 50px;
+  }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px 20px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #575757;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .content .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content .graphs {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .content .graphs .graph {
+            width: 48%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .content .recent-activity {
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .content .recent-activity table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content .recent-activity table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        .content .recent-activity table th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+
+            .content .graphs {
+                flex-direction: column;
+            }
+
+            .content .graphs .graph {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">File Manager</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1>Dashboard - May 25, 2019</h1>
+        </div>
+        <div class="graphs">
+            <div class="graph">
+                <h2>Traffic</h2>
+                <img src="D:\materials itstep\traffic graph.png" alt="Traffic Graph" style="width: 40%;">
+            </div>
+            <div class="graph">
+                <h2>Loads</h2>
+                <img src="D:\materials itstep\loads graph.png" alt="Loads Graph" style="width: 40%;">
+            </div>
+        </div>
+        <div class="recent-activity">
+            <h2>Recent Activity</h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Etiam eu erat sit amet nisi eleifend aliquam</td>
+                    <td>Phoebe Britton</td>
+                    <td>25/05/19</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ut maximus lacus ut ante tristique, et rutrum leo eleifend</td>
+                    <td>Rosina Clay</td>
+                    <td>25/05/19</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Donec eget ligula sed diam pharetra sodales eget a metus</td>
+                    <td>Ayush Horn</td>
+                    <td>24/05/19</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Curabitur bibendum odio in velit pretium luctus</td>
+                    <td>Jillian Carver</td>
+                    <td>23/05/19</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

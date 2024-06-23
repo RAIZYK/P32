@@ -1,0 +1,40 @@
+
+  .fon {
+    width: 500px;
+    height: 100px;
+    border: 5px solid orange;
+  }
+
+
+  .cube {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation-name: myanim;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+
+  @keyframes myanim {
+    from {
+      transform: translateX(8px);
+    }
+    to {
+      transform: translateX(400px);
+    }
+  }
+
+
+  .heart {
+    width: 500px;
+    height: 500px;
+    background-image: url("https://res.cloudinary.com/dkllyttvj/image/upload/v1715879652/favorites-gray_y@wbxt.png");
+    background-size: 200px;
+    transition-duration: 25s;
+  }
+    
+  .heart:hover {
+    background-image: url("https://res.cloudinary.com/dkllyttvj/image/upload/v1715879641/favorites_ysn9nw.png");
+  }

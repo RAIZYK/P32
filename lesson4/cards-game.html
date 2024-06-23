@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework2</title>
+  <style>
+    .card {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+      margin: 20px auto; 
+      padding: 20px;
+      border-radius: 10px; 
+      background-color: #f5f5f5; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h1 {
+      font-size: 2em; 
+      margin: 0; margin 
+    }
+
+    .card h1 span {
+      display: inline-block; 
+      width: 60px;
+      height: 60px; 
+      text-align: center; 
+      line-height: 60px; 
+      border-radius: 5px; 
+      margin: 5px; 
+      font-weight: bold;
+    }
+
+    .player1 span:nth-child(odd) {
+      background-color: #ff9999; 
+      color: white; 
+    }
+
+    .player2 span:nth-child(odd) {
+      background-color: #99ccff; 
+      color: white; 
+    }
+
+    .player1 span:nth-child(even) {
+      background-color: #f54284;; 
+    }
+
+    .player2 span:nth-child(even) {
+      background-color: #42c5f5;; 
+    }
+  </style>
+</head>
+<body>
+  <h2><i>Player1:</i></h2>
+  <div class="card player1">
+    <h1>
+      <span class="kartone">2&#9827;</span>
+      <span class="karttwo">9&#9829;</span>
+      <span class="kartthree"> 6&#9829;</span>
+      <span class="kartfour"> A&#9830;</span>
+      <span class="kartfive"> Q&#9824;</span>
+      <span class="kartsix"> J&#9827; </span>
+    </h1>
+  </div>
+
+  <p><h2><i> Player 2:</i></h2></p>
+  <div class="card player2">
+    <h1>
+      <span class="kartseven"> 3&#9829;</span>
+      <span class="karteight"> A&#9827;</span>
+      <span class="kartnine"> 10&#9827;</span>
+      <span class="kartten"> K&#9830;</span>
+      <span class="karteleven"> 8&#9824;</span>
+      <span class="karttwelve"> 3&#9829;</span>
+    </h1>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Котів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery-header {
+            margin: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .big-image {
+            border: 5px solid #ccc;
+            margin: 20px;
+        }
+        .thumbnail-list {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .thumbnail-list img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <div class="gallery-header">Галерея Котів</div>
+    <iframe class="big-image" id="bigImage" src="images/cat1.png" width="400" height="400"></iframe>
+    <div class="thumbnail-list">
+        <a href="images/cat1.png" onclick="changeImage(event, 'images/cat1.png')">
+            <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_tied_256.png" alt="Кіт 1">
+        </a>
+        <a href="images/cat2.png" onclick="changeImage(event, 'images/cat2.png')">
+            <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_eyes_256.png" alt="Кіт 2">
+        </a>
+        <a href="images/cat3.png" onclick="changeImage(event, 'images/cat3.png')">
+            <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_purr_256.png" alt="Кіт 3">
+        </a>
+        <a href="images/cat4.png" onclick="changeImage(event, 'images/cat4.png')">
+            <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_cage_256.png" alt="Кіт 4">
+        </a>
+        <a href="images/cat5.png" onclick="changeImage(event, 'images/cat5.png')">
+            <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_clean_256.png" alt="Кіт 5">
+        </a>
+        <a href="images/cat6.png" onclick="changeImage(event, 'images/cat6.png')">
+            <img src="D:\html tasks\5\Урок5  Tables Iframe (2)\Урок5  Tables Iframe\materials_practice_module_3\icons_practice_module_3\cat_box_256.png" alt="Кіт 6">
+        </a>
+    </div>
+</div>
+
+<script>
+    function changeImage(event, imageUrl) {
+        event.preventDefault();
+        document.getElementById('bigImage').src = imageUrl;
+    }
+</script>
+
+</body>
+</html>

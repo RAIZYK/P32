@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.vertical-menu {
+    width: 200px;
+    background-color: #7a7a7a;
+    padding: 0;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.menu-item img {
+    margin-right: 10px;
+}
+
+.menu-item:hover, .menu-item.active {
+    background-color: #7a7a7a;
+}
+
+.menu-item span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}

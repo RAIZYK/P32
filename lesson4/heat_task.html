@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Жива іконка</title>
+<style>
+    .icon {
+        width: 100px;
+        height: 100px;
+        transition: transform 5s;
+    }
+    .icon:hover {
+        transform: scale(1.5);
+    }
+</style>
+</head>
+<body>
+<img class="icon" src="https://res.cloudinary.com/dkllyttvj/image/upload/v1715879652/favorites-gray_y0wbxt.png" alt="Жива іконка">
+<script>
+        document.querySelector('.icon').addEventListener('mouseenter', function() {
+            this.src = 'https://res.cloudinary.com/dkllyttvj/image/upload/v1715879641/favorites_ysn9nw.png';
+        });
+ 
+        document.querySelector('.icon').addEventListener('mouseleave', function() {
+            this.src = 'https://res.cloudinary.com/dkllyttvj/image/upload/v1715879641/favorites_ysn9nw.png';
+        });
+</script>
+</body>
+</html>

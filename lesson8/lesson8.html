@@ -1,0 +1,111 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+	<style type="text/css">
+
+	div+p{
+		color: blue;
+	}
+
+	p:hover{
+		background-color: yellow;
+		cursor: pointer;
+	}
+
+	nav{
+		background-color: grey;
+		overflow: auto;
+	}
+
+	nav a{
+		color: orange;
+		text-decoration: none;
+		display: block;
+		float: left;
+		border: 1px solid white;
+		padding: 8px;
+		margin: 8px;
+	}
+
+	nav ul{
+		list-style: none;
+		margin: 0;
+	}
+
+	nav li{
+		margin: 0;
+	}
+
+	nav a:hover{
+		background-color: orange;
+		color: white;
+	}
+
+	nav ul li a:hover{
+		background-color: orange;
+		color: white;
+	}
+
+	nav li:last-child(){
+		float: right;
+			
+	}
+
+	li:nth-last-child(2n){
+		background-color: yellow;
+	}
+
+	p:only-child{
+		color: pink;
+	}	
+
+	div:empty{
+		height: 100px;
+		background-color: green;
+	}
+
+	div:empty:before{
+		content: empty div;
+	}
+
+	</style>
+
+	</head>
+	<body>
+
+	<nav>
+	<ul>
+		<li><a href="#">Link1</a></li>
+		<li><a href="#">Link2</a></li>
+		<li><a href="#">Link3</a></li>
+		<li><a href="#">Link4</a></li>
+		<li><a href="#">Link5</a></li>
+		<li><a href="#">Link6</a></li>
+		<li><a href="#">Link7</a></li>
+		<li><a href="#">Link8</a></li>
+		<li><a href="#">Link9</a></li>
+	</nav>
+
+		<div>
+			div1
+			<p>paragraph1</p>
+			<section>section
+				<p>paragraph2</p>
+			</section>
+			<p>paragraph 1.1</p>
+		</div>
+
+		<p>paragraph3</p>
+		<p>paragraph4</p>
+		<p>paragraph5</p>
+
+		<div></div>
+
+		<a href="https://tempp.com">my link</a></p>
+
+	</body>
+	</html>

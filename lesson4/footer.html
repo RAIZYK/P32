@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка з футером</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стилі футера */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-column {
+  width: 25%;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Стилі іконок соціальних мереж */
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-icons img {
+  width: 70px;
+  height: 70px;
+}
+
+.social-media-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.facebook {
+  background-image: url("D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\fb-gray.png");
+}
+
+.facebook:hover {
+  background-image: url("D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\fb.png");
+}
+
+/* Twitter */
+.twitter {
+  background-image: url("D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\insta.png");
+}
+
+.twitter:hover {
+  background-image: url("D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\insta-hover.png");
+}
+
+/* YouTube */
+.youtube {
+  background-image: url("D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\youtube.png");
+}
+
+.youtube:hover {
+  background-image: url("D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\youtube-hover.png");
+}
+
+
+    </style>    
+</head>
+<body>
+    <header>
+        </header>
+
+    <main>
+        </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <ul class="footer-menu">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul class="footer-menu">
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Політика конфіденційності та файлів cookie</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media-icons">
+                <a href="#" class="facebook">
+                    <img src="D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\fb.png" alt="Facebook" >
+                </a>
+                <a href="#" class="twitter">
+                    <img src="D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\insta.png" alt="Twitter" class="unique">
+                </a>
+                <a href="#" class="youtube">
+                    <img src="D:\html tasks\4\Урок4 Картинки (2)\Урок4 Картинки\icons_hw_module_3\youtube.png" alt="YouTube" class="unique">
+                </a>
+            </div>
+        </div>
+
+        <p class="copyright">© Company 2024-2025</p>
+    </footer>
+</body>
+</html>

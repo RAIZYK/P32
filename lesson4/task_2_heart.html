@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animation</title>
+    <style>
+        div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    line-height: 100px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1em;
+    transition-duration: 2s;
+}
+
+
+div::before{
+    content: attr(class);
+}
+
+.translate:hover{
+    transform: translate(50px); 
+
+}
+
+.scale:hover{
+    transform-origin: 0 100%;
+    transform: scale(2, 2);
+}
+
+.rotate:hover{
+    transform-origin: 50% 50%;
+    transform: rotate(180deg);
+}
+
+.skew:hover{
+    transform: skew(-20deg) translate(20px); 
+}
+
+.transmition{
+    background-color: red;
+    color: white;
+}
+
+.transmition:hover{
+    background-color: green;
+    width: 200px;
+    opacity: 1;
+}
+
+@keyframes myanim{
+
+    from{
+        transform: translateZ(0px);
+    }
+
+    50%{
+        transform: translateZ(50px);
+    }
+
+    to{
+        transform: translateZ(0px);
+    }
+}
+
+
+
+    .animation{
+        animation-timing-function: ease-in-out;
+        animation-name: myanim;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+    }
+}   
+        
+    </style>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="translate"></div>
+    <div class="scale"></div>
+    <div class="rotate"></div>
+    <div class="skew"></div>
+    <div class="transmition"></div>
+    <div class="animation"></div>
+
+</body>
+</html>

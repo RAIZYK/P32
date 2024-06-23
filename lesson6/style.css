@@ -1,0 +1,68 @@
+div{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	line-height: 100px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 1em;
+	transition-duration: 2s;
+}
+
+
+div::before{
+	content: attr(class);
+}
+
+.translate:hover{
+	transform: translate(50px);	
+
+}
+
+.scale:hover{
+	transform-origin: 0 100%;
+	transform: scale(2, 2);
+}
+
+.rotate:hover{
+	transform-origin: 50% 50%;
+	transform: rotate(180deg);
+}
+
+.skew:hover{
+	transform: skew(-20deg) translate(20px); 
+}
+
+.transmition{
+	background-color: red;
+	color: white;
+}
+
+.transmition:hover{
+	background-color: green;
+	width: 200px;
+	opacity: 1;
+}
+
+@keyframes myanim{
+
+	from{
+		transform: translateZ(0px);
+	}
+
+	100%{
+		transform: translateZ(50px);
+	}
+
+}
+
+
+
+	.animation{
+		transform: translateX(10px);
+		animation-timing-function: ease-in-out;
+		animation-name: myanim;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+	}
+}	

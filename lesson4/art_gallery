@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея зображень</title>
+    <style>
+        /* Стилі для галереї */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            opacity: 0.8;
+        }
+
+        .gallery-item.active img {
+            border: 2px solid #007bff;
+        }
+
+        /* Стилі для рамки */
+        .frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 3px solid #000;
+            pointer-events: none;
+        }
+
+        /* Стилі для iframe */
+        #main-image {
+            width: 600px;
+            height: 400px;
+            border: 0;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Галерея зображень</h1>
+
+    <div class="gallery">
+        <div class="gallery-item" data-image="image1.jpg">
+            <img src="image1.jpg" alt="Зображення 1">
+            <div class="frame"></div>
+        </div>
+
+        <div class="gallery-item" data-image="image2.jpg">
+            <img src="image2.jpg" alt="Зображення 2">
+            <div class="frame"></div>
+        </div>
+
+        <div class="gallery-item" data-image="image3.jpg">
+            <img src="image3.jpg" alt="Зображення 3">
+            <div class="frame"></div>
+        </div>
+
+        </div>
+
+    <iframe id="main-image" src="image1.jpg"></iframe>
+
+    <script>
+        // Додавання події кліку до маленьких зображень
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imageSrc = this.dataset.image;
+
+                // Зміна src iframe
+                document.getElementById('main-image').src = imageSrc;
+
+                // Додавання класу active до поточного елемента
+                this.classList.add('active');
+
+                // Видалення класу active з інших елементів
+                galleryItems.forEach(otherItem => {
+                    if (otherItem !== this) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

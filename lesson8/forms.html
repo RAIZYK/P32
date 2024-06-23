@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+
+body{
+	text-align: center;
+}	
+
+	form{
+		position: relative;
+		border: 1px solid;
+		display: inline-block;
+		padding: 15px;
+		text-align: left;
+		border-radius: 15px;
+		margin-top: 40px;
+	}
+	input{
+		margin-bottom: 7px;
+	}
+
+	fielfset{
+		border-radius: 15px;
+		background-color: lightgray;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<form action="car/{carid}" method="get">
+
+
+		<fieldset>
+			<legend>Registration</legend>
+		<span>Login</span> <br>	
+		<input type="text" name="q" placeholder="name"> <br>
+		<span>Password*</span> <br>
+
+		<input type="password" name="password" required> <br>
+		<span>Age</span> <br>
+
+		<input type="number" name="age" max="100" min="0"> <br>
+		<span>Email</span> <br>
+
+		<input type="email" name="email" pattern="^[^@]+@[^@]+\.[^@]+$"> <br>
+		<span>Phone</span> <br>
+		<input type="tel" name="tel" pattern="" placeholder="+380"> <br>
+		</fieldset>
+
+		<span>Languages</span> <br>
+		<input type="checkbox" name="java">Java <br>
+		<input type="checkbox" name="python">Python <br>
+		<input type="checkbox" name="cpp">CPP <br>
+		<input type="checkbox" name="csharp">C# <br>
+
+		<span>Gender</span> <br>
+		<input type="radio" name="item" id="male">Male 
+		<input type="radio" name="item" id="female">Female 
+		<input type="radio" name="item" id="none">None 
+		<br>	
+		<input type="file" name="file"> <br>	
+		<input type="color" name="color"> <br>
+		<input type="range" name="slider"> <br>
+
+		<textarea cols="10" rows="50">
+		</textarea>
+		<br>	
+
+		<select name="cities">
+			<option value="">Dnipro</option>
+			<option value="">Lviv</option>
+			<option value="">Kyiv</option>
+		</select>
+
+		<br>
+
+		<textarea cols="30" rows="5">
+			
+		</textarea>
+		<br>
+
+		<input type="reset">
+		<input type="submit">
+
+	</form>
+
+</body>
+</html>

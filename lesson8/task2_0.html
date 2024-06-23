@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Структура сайту</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, nav, aside, main, footer {
+      padding: 10px;
+    }
+    header {
+      height: auto;
+      background-color: #800040;
+      color: white;
+    }
+    
+    header .header-title {
+      margin-bottom: 10px;
+    }
+    nav {
+      height: 30px;
+      background-color: #800040;
+      color: white;
+      clear: both;
+    }
+    aside {
+      width: 20%;
+      float: left;
+      margin: 5px;
+      box-sizing: border-box;
+      background-color: #800040;
+      color: white;
+    }
+    main {
+      width: 70%;
+      float: left;
+      margin: 5px;
+      box-sizing: border-box;
+      background-color: #A00050;
+    }
+    .section {
+      background-color: #C04070;
+      margin: 10px 0;
+      padding: 15px;
+      color: white;
+    }
+    footer {
+      clear: both;
+      height: 50px;
+      background-color: #800040;
+      color: white;
+    }
+    .aside-3 {
+      width: 25%;
+      float: right;
+      font-size: 2em;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-title">HEADER</div>
+    <nav>MENU</nav>
+  </header>
+  <aside>ASIDE 1</aside>
+  <main>
+    <div class="section">MAIN CONTENT</div>
+    <div class="section">SECTION 1</div>
+    <div class="section">SECTION 2</div>
+  </main>
+  <aside class="aside-3">
+    ASIDE 3
+  </aside>
+  <aside>ASIDE 2</aside>
+  <footer>FOOTER</footer>
+</body>
+</html>

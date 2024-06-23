@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .upload-container {
+            width: 80%;
+            max-width: 600px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .upload-image {
+            width: 100%;
+            max-width: 120px;
+            margin: 20px;
+        }
+        .upload-info {
+            text-align: center;
+            padding: 10px 20px;
+            position: relative;
+            font-size: 0.8em; 
+        }
+        .upload-info h1 {
+            margin: 0;
+            font-size: 1em; 
+        }
+        .progress-bar-container {
+            width: 80%;
+            background: #e0e0e0;
+            border-radius: 20px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            width: 0;
+            height: 10px;
+            background: #4caf50;
+            border-radius: 20px;
+            animation: progress 23s linear forwards;
+        }
+        .remaining-time {
+            font-size: 0.8em; 
+            color: #555;
+        }
+        .done-button {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em; 
+        }
+        .done-button:disabled {
+            background: #aaa;
+        }
+        @keyframes progress {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        .upload-info::before {
+            content: 'Uploading 0% - About 23 minutes remaining';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em; 
+            animation: remaining-time 23s linear forwards;
+        }
+        @keyframes remaining-time {
+            0% {
+                content: 'Uploading 0% - About 23 minutes remaining';
+            }
+            10% {
+                content: 'Uploading 10% - About 21 minutes remaining';
+            }
+            20% {
+                content: 'Uploading 20% - About 19 minutes remaining';
+            }
+            30% {
+                content: 'Uploading 30% - About 16 minutes remaining';
+            }
+            40% {
+                content: 'Uploading 40% - About 14 minutes remaining';
+            }
+            50% {
+                content: 'Uploading 50% - About 12 minutes remaining';
+            }
+            60% {
+                content: 'Uploading 60% - About 9 minutes remaining';
+            }
+            70% {
+                content: 'Uploading 70% - About 7 minutes remaining';
+            }
+            80% {
+                content: 'Uploading 80% - About 5 minutes remaining';
+            }
+            90% {
+                content: 'Uploading 90% - About 2 minutes remaining';
+            }
+            100% {
+                content: 'Uploading 100% - About 0 minutes remaining';
+            }
+        }
+        @media (min-width: 600px) {
+            .upload-container {
+                flex-direction: row;
+            }
+            .upload-image {
+                margin: 20px;
+                max-width: 100px;
+            }
+            .upload-info {
+                text-align: left;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <img src="C:\Users\sasha\Downloads\cat_650.png" alt="Upload Image" class="upload-image">
+        <div class="upload-info">
+            <h1>Title of video</h1>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p class="remaining-time"></p>
+        </div>
+        <button class="done-button" disabled>DONE</button>
+    </div>
+</body>
+</html>

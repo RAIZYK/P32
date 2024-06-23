@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.plans {
+    display: flex;
+    gap: 20px;
+}
+
+.plan {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.enterprise {
+    border-top: 5px solid red;
+}
+
+.professional {
+    border-top: 5px solid orange;
+}
+
+.standard {
+    border-top: 5px solid blue;
+}
+
+.basic {
+    border-top: 5px solid green;
+}
+
+.price {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.price span {
+    display: block;
+    font-size: 16px;
+    color: gray;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-yellow {
+    background-color: orange;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-green {
+    background-color: green;
+}

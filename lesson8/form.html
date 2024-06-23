@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles1_0.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="contact-form">
+            <h2>Contact form</h2>
+            <p>Please fill in your information and we'll be sending your order.</p>
+            <label for="first-name">Your name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="first name">
+            <input type="text" id="last-name" name="last-name" placeholder="last name">
+            
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="your_mail@mail.com">
+
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" placeholder="000 000 0000">
+
+            <label for="subject">Message subject *</label>
+            <select id="subject" name="subject">
+                <option value="other">Other</option>
+
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+            <button type="submit">SUBMIT FORM</button>
+        </form>
+    </div>
+</body>
+</html>
